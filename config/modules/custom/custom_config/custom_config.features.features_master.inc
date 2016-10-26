@@ -11,6 +11,7 @@ function custom_config_features_master_defaults() {
   module_load_include('module', 'data_config');
 
   $features_master = data_config_enabled_modules();
+  $features_master['modules']['features_override'] = 'features_override';
   
   // Add and remove modules where necessary.
   unset($features_master['modules']['example']);
